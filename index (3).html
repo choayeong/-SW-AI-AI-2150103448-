@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>무역 용어 마스터 퀴즈</title>
+<style>
+body { font-family: "NanumGothic"; max-width:600px; margin:40px auto; text-align:center; }
+#quiz-box{border:2px solid #ccc; border-radius:10px; padding:20px;}
+input{padding:8px; margin-top:10px; width:80%;}
+button{padding:8px 12px; margin:10px;}
+#feedback{font-weight:bold; margin-top:10px;}
+</style>
+</head>
+<body>
+  <h2>무역 용어 마스터 퀴즈</h2>
+  <div id="quiz-box">
+    <p id="definition">여기에 문제가 표시됩니다.</p>
+    <input id="answer" placeholder="정답을 입력하세요">
+    <button onclick="checkAnswer()">정답 확인</button>
+    <p id="feedback"></p>
+    <p>점수: <span id="score">0</span></p>
+  </div>
+  <button onclick="nextQuiz()">다음 문제</button>
+  <button onclick="restartQuiz()">다시 시작</button>
+
+<script src="script.js"></script>
+</body>
+</html>
+
